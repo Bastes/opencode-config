@@ -36,6 +36,18 @@ ollama pull qwen3-coder:30b
 ollama pull ollama/qwen3-coder:30b
 ```
 
+To ensure the model properly understands how to use available tools, please run the following commands:
+
+```bash
+ollama run qwen3-coder:30b
+> /set parameter num_ctx 16384
+Set parameter 'num_ctx' to `16384`
+> /save qwen3-coder:30b
+Created new model `qwen3-coder:30b'
+> /bye
+```
+
+This increases the context window size to accommodate the tool usage instructions and other contextual information that opencode needs to properly function.
+
 That's it. You're now officially configured to use my amazing setup. Enjoy
 the... "optimization" of your workflow.
-```
