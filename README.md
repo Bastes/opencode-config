@@ -33,6 +33,7 @@ Once you have ollama installed, you can pull the `qwen3-coder:30b` model:
 
 ```bash
 ollama pull qwen3-coder:30b
+ollama pull qwen3.5:35b-a3b
 ```
 
 To ensure the model properly understands how to use available tools, please run the following commands:
@@ -43,6 +44,13 @@ ollama run qwen3-coder:30b
 Set parameter 'num_ctx' to `16384`
 > /save qwen3-coder:30b
 Created new model `qwen3-coder:30b'
+> /bye
+
+ollama run qwen3.5:35b-a3b
+> /set parameter num_ctx 16384
+Set parameter 'num_ctx' to `16384`
+> /save qwen3.5:35b-a3b-16384
+Created new model `qwen3-coder:30b-16384'
 > /bye
 ```
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "qwen3.5:35b-a3b",
+  "model": "qwen3.5:35b-a3b-16384",
   "provider": {
     "ollama": {
       "npm": "@ai-sdk/openai-compatible",
@@ -14,8 +14,8 @@
           "reasoning": true,
           "tools": true
         },
-        "qwen3.5:35b-a3b": {
-          "name": "qwen3.5:35b-a3b",
+        "qwen3.5:35b-a3b-16384": {
+          "name": "qwen3.5:35b-a3b-16384",
           "reasoning": true,
           "tools": true
         },
