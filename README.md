@@ -33,7 +33,6 @@ Once you have ollama installed, you can pull the `qwen3-coder:30b` model:
 
 ```bash
 ollama pull qwen3-coder:30b
-ollama pull ollama/qwen3-coder:30b
 ```
 
 To ensure the model properly understands how to use available tools, please run the following commands:
