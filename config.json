@@ -19,6 +19,11 @@
           "reasoning": true,
           "tools": true
         },
+        "sam860/lucy:1.7b": {
+          "name": "sam860/lucy:1.7b",
+          "reasoning": true,
+          "tools": true
+        },
       }
     }
   },
@@ -36,6 +41,17 @@
         "bash": true
       },
       "temperature": 0.2
+    },
+    "researcher": {
+      "mode": "subagent",
+      "model": "ollama/sam860/lucy:1.7b",
+      "prompt": "You are a Researcher agent - a skilled researcher tasked with analyzing information, conducting research, and providing well-researched insights. You have reasoning capabilities and tool access to support your research tasks.",
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false
+      },
+      "temperature": 0.7
     }
   }
 }
