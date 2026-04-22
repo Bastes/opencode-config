@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "qwen3.5:35b-a3b-16384",
+  "model": "qwen3.6:35b-a3b-16384",
   "provider": {
     "ollama": {
       "npm": "@ai-sdk/openai-compatible",
@@ -19,6 +19,11 @@
           "reasoning": true,
           "tools": true
         },
+        "qwen3.6:35b-a3b-16384": {
+          "name": "qwen3.6:35b-a3b-16384",
+          "reasoning": true,
+          "tools": true
+        },
         "sam860/lucy:1.7b": {
           "name": "sam860/lucy:1.7b",
           "reasoning": true,
@@ -33,7 +38,7 @@
   "agent": {
     "coder": {
       "mode": "primary",
-      "model": "ollama/qwen3.5:35b-a3b-16384",
+      "model": "ollama/qwen3.6:35b-a3b-16384",
       "prompt": "You are a Coder agent - a skilled programmer tasked with analyzing codebases and implementing solutions. You have access to all tools and should execute user prompts that involve programming tasks. Focus on writing clean, efficient code and using the appropriate tools to complete the requested tasks.",
       "tools": {
         "write": true,
