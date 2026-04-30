@@ -35,6 +35,7 @@ Once you have ollama installed, you can pull the `qwen3-coder:30b` model:
 ollama pull qwen3-coder:30b
 ollama pull qwen3.5:35b-a3b
 ollama pull qwen3.6:35b-a3b
+ollama pull qwen3-coder:30b-a3b-q4_K_M
 ollama pull sam860/lucy:1.7b
 ```
 
@@ -60,6 +61,13 @@ ollama run qwen3.6:35b-a3b
 Set parameter 'num_ctx' to `16384`
 > /save qwen3.6:35b-a3b-16384
 Created new model `qwen3-coder:30b-16384'
+> /bye
+
+ollama run qwen3-coder:30b-a3b-q4_K_M
+> /set parameter num_ctx 16384
+Set parameter 'num_ctx' to `16384`
+> /save qwen3-coder:30b-a3b-q4_K_M-16384
+Created new model `qwen3-coder:30b-a3b-q4_K_M-16384'
 > /bye
 ```
 
